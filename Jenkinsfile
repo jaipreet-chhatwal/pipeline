@@ -15,7 +15,7 @@ pipeline {
 
 	stage('Compile-Package'){
     	 steps {
-    		sh 'mvn clean package'
+    		C:\Windows\system32\cmd.exe 'mvn clean package'
         }
 	 }
 
