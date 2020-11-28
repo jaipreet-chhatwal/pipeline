@@ -7,7 +7,11 @@ pipeline {
       }
     }
 
-
+	stage('Compile-Package'){
+    	 steps {
+    		sh 'mvn clean package'
+        }
+	 }
 
   }
 }
