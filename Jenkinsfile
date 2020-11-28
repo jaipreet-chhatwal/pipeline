@@ -9,7 +9,7 @@ pipeline {
 
     stage('SCM Checkout'){
     	  steps {
-     		 git 'https://github.com/jaipreet-chhatwal/pipeline.git'
+          git 'https://github.com/jaipreet-chhatwal/pipeline.git'
       }
 	}
 
