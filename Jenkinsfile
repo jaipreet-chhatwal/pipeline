@@ -7,17 +7,7 @@ pipeline {
       }
     }
 
-    stage('SCM Checkout'){
-    	  steps {
-          git 'https://github.com/jaipreet-chhatwal/pipeline.git'
-      }
-	}
 
-	stage('Compile-Package'){
-    	 steps {
-    		sh 'mvn clean package'
-        }
-	 }
 
   }
 }
