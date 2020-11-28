@@ -1,17 +1,15 @@
-pipeline {
-  agent any
-  stages {
-    stage('Message') {
-      steps {
-        echo 'Pipeline Init'
-      }
-    }
+node {
+  
 
-	stage('Compile-Package'){
-    	 steps {
-    		sh 'mvn clean package'
-        }
-	 }
+stage('SCM Checkout'){
+  
+ git 'https://github.com/jaipreet-chhatwal/pipeline.git'
 
   }
+
+stage('Compile-Package'){
+  
+  sh 'mvn clean package'
+}
+
 }
